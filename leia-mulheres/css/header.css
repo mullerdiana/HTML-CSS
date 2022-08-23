@@ -1,0 +1,92 @@
+.logo-menu {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem;
+  color: white;
+  background-color: #211876;
+}
+.dropdown {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.dropdown-item {
+  color: white;
+  margin: 0 10px;
+  position: relative;
+  padding-bottom: 1rem;
+}
+.dropdown-link {
+  color: white;
+  text-decoration: none;
+}
+.dropdown-link:hover, .dropdown-item span:hover {
+  text-decoration: underline;
+}
+.dropdown-submenu {
+  background: linear-gradient(
+    180deg,
+    rgba(33, 24, 118, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(216, 1, 61, 1) 100%
+  );
+  border-radius: 8px;
+  left: 50%;
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+  position: absolute;
+  z-index: 3;
+  top: calc(80% + 5px);
+  transform-origin: top center;
+  transform: translateX(-50%) rotateX(-90deg);
+  width: 200px;
+}
+.dropdown-item:hover ul {
+  transform: translateX(-50%) rotateX(0);
+}
+.dropdown-submenu__link,
+h1 a {
+  color: white;
+  text-decoration: none;
+}
+.dropdown-submenu__link:hover {
+  text-decoration: underline;
+}
+.dropdown-submenu__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+#banner {
+  background-image: url("./images/banner_livros.png");
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#banner p {
+  color: white;
+  font-size: 5rem;
+  text-align: center;
+}
+
+/* responsivity */
+@media only screen and (max-width: 1200px) {
+  .logo-menu {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .logo-menu {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .logo-menu {
+    font-size: 0.6rem;
+  }
+}
+

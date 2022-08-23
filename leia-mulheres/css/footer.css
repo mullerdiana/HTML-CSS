@@ -1,0 +1,22 @@
+footer {
+  align-items: center;
+  background-color: #211876;
+  color: white;
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  padding: 2.5rem;
+}
+
+@media only screen and (max-width: 1200px){
+  footer{
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    font-size: 1.5rem;
+}
+}
+@media only screen and (max-width: 600px){
+  footer{
+    font-size: 0.5rem;
+}
+}

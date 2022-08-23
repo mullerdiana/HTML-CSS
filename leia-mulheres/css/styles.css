@@ -1,0 +1,158 @@
+#banner {
+  background-image: url("../images/banner_livros.png");
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#banner p {
+  color: white;
+  font-size: 5rem;
+  text-align: center;
+}
+
+main {
+  padding: 2rem;
+  background-color: #ebeef3;
+}
+.container-citation {
+  padding: 1rem 0 0 1rem;
+}
+.container-citation h2 {
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: start;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    160deg,
+    rgba(33, 24, 118, 1) 10%,
+    rgba(216, 1, 61, 1)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.citation {
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+.main-container,
+.action {
+  padding-top: 2rem;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.main-container img,
+.action img {
+  border-radius: 30px;
+}
+.box-action__text {
+  padding-top: 5rem;
+}
+.box-action__text h3 {
+  padding-left: 2rem;
+  color: #211876;
+  font-size: 2rem;
+  text-align: start;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+.box-action__text p {
+  padding-left: 2rem;
+  font-size: 1.5rem;
+}
+
+/* responsivity */
+@media only screen and (max-width: 1200px) {
+  #banner {
+    height: 80vh;
+  }
+  #banner p {
+    font-size: 4.5rem;
+  }
+  .container-citation {
+    padding: 1rem 0 0 1rem;
+  }
+  .container-citation h2 {
+    font-size: 3.75rem;
+    background-image: linear-gradient(
+      160deg,
+      rgba(33, 24, 118, 1) 2%,
+      rgba(216, 1, 61, 1)
+    );
+  }
+  .citation {
+    font-size: 1.5rem;
+  }
+  .box-action__text {
+    padding: 1rem 0 .5rem 0;
+  }
+  .main-container img, .action img{
+    margin: auto;
+    width: 60%;
+  }
+  .main-container img{
+    margin-left: 32px;
+  }
+  .box-action__text h3 {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+  }
+  .box-action__text p {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #banner p {
+    font-size: 3.5rem;
+  }
+  .container-citation h2 {
+    font-size: 2rem;
+  }
+  .citation {
+    font-size: 1.25rem;
+  }
+  .box-action__text {
+    padding: 1rem 0 .5rem 0;
+  }
+  .main-container img, .action img{
+    margin: auto;
+    width: 60%;
+  }
+  .main-container img{
+    padding-left: 5%;
+  }
+  .box-action__text h3 {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+  }
+  .box-action__text p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #banner p {
+    font-size: 3rem;
+  }
+  .main-container img, .action img{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #banner {
+    height: 35vh;
+  }
+  #banner p {
+    font-size: 1.75rem;
+  }
+  main {
+    padding: .5rem 0 9rem 0;
+  }
+  .container-citation h2 {
+    font-size: 1.75rem;
+  }
+}
+
